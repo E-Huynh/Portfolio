@@ -39,16 +39,16 @@ export default function ButtonAppBar() {
             Erik Huynh
           </Typography>
           <IconButton>
-              <GitHubIcon fontSize="large"/>
+              <GitHubIcon style={{ fontSize: 30 }}/>
           </IconButton>
           <IconButton>
-              <LinkedInIcon fontSize="large"/>
+              <LinkedInIcon style={{ fontSize: 40 }}/>
           </IconButton>
           <IconButton>
-              <MailOutlineIcon fontSize="large"/>
+              <MailOutlineIcon style={{ fontSize: 40 }}/>
           </IconButton>
           <IconButton>
-              <InsertDriveFileIcon fontSize="large"/>
+              <InsertDriveFileIcon style={{ fontSize: 35 }}/>
           </IconButton>
         </Toolbar>
       </AppBar>
