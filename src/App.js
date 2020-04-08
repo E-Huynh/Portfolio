@@ -1,13 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from './components/navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello Erik</h1>
-      <Navbar />
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        {/* <Route exact path="/" component={Home} /> */}
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+
