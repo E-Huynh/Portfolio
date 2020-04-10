@@ -9,6 +9,9 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
+import { createMuiTheme } from '@material-ui/core/styles';
+import purple from '@material-ui/core/colors/purple';
+import green from '@material-ui/core/colors/green';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,17 +23,30 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  gradient: {
-    background: '#595959'
+  app: {
+    background: '#272727'
+  },
+  iconColor: {
+    color: '#747474'
   }
 }));
+
+const theme = createMuiTheme({
+    palette: {
+      primary: purple,
+      secondary: green,
+    },
+    status: {
+      danger: 'orange',
+    },
+  });
 
 export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" className={classes.gradient}>
+      <AppBar position="static" theme={theme}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
@@ -39,16 +55,16 @@ export default function ButtonAppBar() {
             Erik Huynh
           </Typography>
           <IconButton>
-              <GitHubIcon style={{ fontSize: 30 }}/>
+              <GitHubIcon className={classes.iconColor} style={{ fontSize: 30 }}/>
           </IconButton>
           <IconButton>
-              <LinkedInIcon style={{ fontSize: 40 }}/>
+              <LinkedInIcon className={classes.iconColor} style={{ fontSize: 40 }}/>
           </IconButton>
           <IconButton>
-              <MailOutlineIcon style={{ fontSize: 40 }}/>
+              <MailOutlineIcon className={classes.iconColor} style={{ fontSize: 40 }}/>
           </IconButton>
           <IconButton>
-              <InsertDriveFileIcon style={{ fontSize: 35 }}/>
+              <InsertDriveFileIcon className={classes.iconColor} style={{ fontSize: 35 }}/>
           </IconButton>
         </Toolbar>
       </AppBar>
