@@ -29,12 +29,12 @@ export default function portfolioContainer() {
                         About Myself
                     </Typography>
                 </Grid>
-                <Grid item sm={4}>
+                <Grid item md={4}>
                     <Paper className={classes.paper}>
                         <img src={bioImage} alt="Bio" height={'100%'} width={'100%'} />
                     </Paper>
                 </Grid>
-                <Grid item sm={8}>
+                <Grid item md={8}>
                     <Paper className={classes.paper}>
                         <Typography variant='h4'>
                             Biography
