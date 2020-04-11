@@ -74,7 +74,7 @@ export const data = [
     {
         id: 'quiz-game',
         title: 'Quiz Game',
-        image: 'https://github.com/E-Huynh/Portfolio/blob/master/src/assets/quiz_game.png?raw=true',
+        image: 'https://github.com/E-Huynh/Portfolio/blob/master/src/assets/quiz-game.png?raw=true',
         description: 'Test your knowledge with this programming related interactice quiz with timer and a highscore tracker.',
         repo: 'https://github.com/E-Huynh/quiz_game',
         link: 'https://e-huynh.github.io/quiz_game/quiz_game.html'
@@ -82,7 +82,7 @@ export const data = [
     {
         id: 'password-generator',
         title: 'Password Generator',
-        image: 'https://github.com/E-Huynh/Portfolio/blob/master/src/assets/password_generator.png?raw=true',
+        image: 'https://github.com/E-Huynh/Portfolio/blob/master/src/assets/password-generator.png?raw=true',
         description: 'Quickly generate passwords with user specified inputs of character type and length.',
         repo: 'https://github.com/E-Huynh/Password_Generator',
         link: 'https://e-huynh.github.io/Password_Generator/'
