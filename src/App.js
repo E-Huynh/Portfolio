@@ -9,8 +9,7 @@ function App() {
     <Router>
       <div>
         <NavBar />
-        {/* <PortfolioContainer /> */}
-        <Route exact path="/" component={PortfolioContainer} />
+        <Route exact path="/portfolio" component={PortfolioContainer} />
         <Route exact path="/projects" component={ProjectContainer} />
       </div>
     </Router>

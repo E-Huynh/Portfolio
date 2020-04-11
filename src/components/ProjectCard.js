@@ -5,7 +5,7 @@ import { Grid, Card, CardActionArea, CardMedia, CardContent, Typography, CardAct
 
 
 export default function ProjectCard({project}) {
-    console.log(project)
+    // console.log(project)
     return (
         <Grid item sm={6}>
             <Card>
